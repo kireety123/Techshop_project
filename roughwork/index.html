@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech-Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Basic Header Styling */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 15px 30px;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+      position: relative;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px 40px 10px 15px;
+      border-radius: 20px;
+      border: none;
+      box-sizing: border-box;
+    }
+
+    .search-bar .fa-search {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: gray;
+    }
+
+    .icons {
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+    }
+
+    .icons i {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .icons i:hover {
+      color: #00aaff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Tech-Shop</div>
+    
+    <div class="search-bar">
+      
+      <i class="fas fa-search"></i>
+    </div>
+    
+    <div class="icons">
+      <i class="fas fa-shopping-cart" title="Cart"></i>
+      <i class="fas fa-user" title="Profile"></i>
+    </div>
+  </header>
+
+</body>
+</html>
