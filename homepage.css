@@ -56,11 +56,17 @@ body{
     background-color: gray;
     color: white;
     height: 40px;
-    width:180px ;
+    width:180px ; 
 }
+.btn{
+  position: relative;
+  bottom: 40px;
+  right: 10px;
+}
+
 .profile-card{
     padding-left: 20px;
-   padding-top: 20px;
+   padding-top: 10px;
 }
 
 .searchbar{

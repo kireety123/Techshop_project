@@ -1,0 +1,285 @@
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    margin-bottom:30px;
+
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.heading h2{
+    margin-left: 30px;
+}
+
+.navbar-icons{
+    display: flex;
+    gap: 60px;
+    margin-right: 50px;
+    font-size: large;
+    margin-top: 10px;
+}
+.hovering{
+    display: none;
+}
+.profile-card{
+    display: none;
+}
+.searchbar:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+.cart:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+.profile-icon:hover .profile-card{
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    height: 250px;  
+    border: 1px solid gray;   
+}
+.profile-card button{
+    background-color: gray;
+    color: white;
+    height: 40px;
+    width:180px ; 
+}
+.btn{
+  position: relative;
+  bottom: 40px;
+  right: 10px;
+}
+
+.profile-card{
+    padding-left: 20px;
+   padding-top: 10px;
+}
+
+.searchbar{
+    position: relative;
+}
+.cart{
+    position: relative;
+    bottom: 20px;
+}
+.profile-icon{
+    position: relative;
+}
+.number{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 15px;
+    top: 8px;
+    
+}
+.number p{
+    position: relative;
+    bottom: 5px;
+}
+
+/* Phones (small: <480px) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+
+  .navbar-icons {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .navbar-icons i {
+    font-size: 18px;
+  }
+}
+
+/* Phones (medium: 481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-icons {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading h2 {
+    font-size: 26px;
+  }
+
+  .navbar-icons i {
+    font-size: 22px;
+  }
+}
+
+/* Laptops (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .heading h2 {
+    font-size: 28px;
+  }
+
+  .navbar-icons {
+    gap: 25px;
+  }
+
+  .navbar-icons i {
+    font-size: 24px;
+  }
+}
+
+/* Desktops (1441px - 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .heading h2 {
+    font-size: 30px;
+  }
+
+  .navbar-icons {
+    gap: 30px;
+  }
+}
+
+/* Ultra-wide screens (above 1920px) */
+@media (min-width: 1921px) {
+  .header {
+    padding: 20px 60px;
+  }
+
+  .heading h2 {
+    font-size: 32px;
+  }
+
+  .navbar-icons i {
+    font-size: 26px;
+  }
+
+  .navbar-icons {
+    gap: 40px;
+  }
+}
+.expdet{
+    display:flex;
+
+}
+.scimage{
+    width: 200px;
+    height: 200px;
+}
+.scimage img{
+    width:150px;
+    height:150px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.scimage2 img{
+    width:150px;
+    height:150px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.scimage2{
+     width: 400px;
+    height: 200px;
+    
+}
+.showcase{
+    margin-left: 20px;
+}
+.details{
+    margin-top: 30px;
+}
+.maincase img{
+    width: 800px;
+    height:800px;
+    position: relative;
+    right:150px;
+}
+.imgdet{
+    width: 400px;
+}
+.det1>h2+p{
+  font-size: larger;
+  font-weight: bold;
+}
+.ratings{
+    position: relative;
+    left: 120px;
+    bottom: 25px;
+}
+.det1>i{
+    color: red;
+}
+.det2 ins{
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    
+    
+}
+.insdel{
+    position: relative;
+    top: 40px;
+}
+
+.det2 del{
+    font-size: larger;
+    padding-left: 30px;
+}
+#greenline{
+    color: green;
+    padding-top: 50px;
+    font-size: larger;
+    font-weight: bold;
+}
+#taxline{
+     position: relative;
+     bottom: 30px;
+     color: gray;
+     font-size: large;
+}
+.det2 button{
+    background-color: green;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    width: 130px;
+    height: 40px;
+    position: relative;
+    left: 270px;
+    bottom: 90px;
+}
+.cont{
+    position: relative;
+    top: 30px;
+}
