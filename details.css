@@ -40,7 +40,7 @@ body{
     display: block;
     position: absolute;
     right: 0px;
-    top: 40px;
+    top: 60px;
     padding: 0px 10px;
     border: 1px solid grey;
 }
@@ -60,7 +60,7 @@ body{
 }
 .btn{
   position: relative;
-  bottom: 40px;
+  bottom: -60px;
   right: 10px;
 }
 
@@ -289,6 +289,8 @@ body{
 }
 .det2{
     height: 200px;
+   position: relative;
+   bottom: 35px;
 }
 .emi{
     border: 1px solid grey;
@@ -320,7 +322,7 @@ body{
     gap: 20px;
 }
 .det4 button{
-    margin-top: 20px;
+    margin-top: 80px;
     color: white;
     background-color: red;
     width: 200px;

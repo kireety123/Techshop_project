@@ -1,0 +1,185 @@
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    margin-bottom:30px;
+
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.heading h2{
+    margin-left: 30px;
+}
+
+.navbar-icons{
+    display: flex;
+    gap: 60px;
+    margin-right: 50px;
+    font-size: large;
+    margin-top: 10px;
+}
+.hovering{
+    display: none;
+}
+.profile-card{
+    display: none;
+}
+.searchbar:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+.cart:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+.profile-icon:hover .profile-card{
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    height: 250px;  
+    border: 1px solid gray;   
+}
+.profile-card button{
+    background-color: gray;
+    color: white;
+    height: 40px;
+    width:180px ; 
+}
+.btn{
+  position: relative;
+  bottom: 0px;
+  right: 10px;
+}
+
+.profile-card{
+    padding-left: 20px;
+   padding-top: 10px;
+}
+
+.searchbar{
+    position: relative;
+}
+.cart{
+    position: relative;
+    bottom: 20px;
+}
+.profile-icon{
+    position: relative;
+}
+.number{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 15px;
+    top: 8px;
+    
+}
+.number p{
+    position: relative;
+    bottom: 5px;
+}
+
+ .smimage{
+     width: 400px;
+    height: 200px;
+ }
+ .smimage img{
+     width:150px;
+    height:150px;
+    position: relative;
+    left: 50px;
+ }
+.image1{
+    display: flex;
+}
+
+.cartbuttons{
+    display: flex;
+    width: fit-content;
+    border: 1px solid gray;
+    position: relative;
+    top: 30px;
+    
+}
+.btn1 button{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    width: 50px;
+    height: 40px;
+    font-size: large;
+    border: rgb(66, 65, 65) ;
+}
+.btn2 button{
+background-color: black;
+color: red;
+width: 60px;
+height: 40px;
+border:  rgb(66, 65, 65);
+font-size: x-large;
+font-weight: bolder;
+
+}
+
+.images{
+    width: 800px;
+    height: 600px;
+    border: 1px solid rgb(20, 20, 21);
+    background-color: rgb(20, 20, 20) ;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+    padding: 0px 20px;
+}
+.image1{
+    margin-top: 50px;
+}
+.details p{
+    font-size: larger;
+    display: flex;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    padding-right: 90px;
+    
+}
+.details ins{
+    font-size: xx-large;
+    text-decoration: none;
+    
+    position: relative;
+    right: 23px;
+}
+.details del{
+    font-weight: lighter;
+    font-size: large;
+}
+.details i{
+    font-size: large;
+    position: relative;
+    left: 380px;
+    bottom: 80px;
+}
+
+.cartbody{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
