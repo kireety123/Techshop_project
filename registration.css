@@ -3,10 +3,15 @@
      starts here */    
 /*body*/     
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: space-evenly;
+    overflow-x: hidden;
+    
+   
+    
+    background-color: black;
+    color: white;
+    
+    margin-bottom:30px;
+
 }
 /*registrationcard*/
 .registrationcard{
@@ -14,15 +19,19 @@ body{
     background-color: rgb(40, 40, 40);
     color: white;
     display: flex;
-    height: 570px;
+    height: 550px;
     flex-direction: column;
     width: 340px;
     justify-content: center;
     padding: 20px;padding-bottom: 5px;
+    margin-top: 100px;
+    position: relative;
+    left: 250px;
+
     
 }
 /*h2+p*/
-h2+p{
+ #log p{
     position: relative;
     bottom: 30px;
     color: grey;
@@ -33,8 +42,8 @@ h2+p{
     color: azure;
     background-color: red;
     height: 40px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 5px;
+    margin-top: 0px;
 }
 .otherapps{
     display: flex;
@@ -59,7 +68,7 @@ h2+p{
     position: relative;
     width: 100px;
     height:40px;
-    bottom: 60px;
+    bottom: 40px;
     margin-top: 20px;   
 }
 /*input types*/
@@ -80,22 +89,113 @@ input::placeholder {
 /* loginwith*/     
 .loginwith{
     position: relative;
-    top: -25px;
-    left: 119px;
+    top: -15px;
+    left: 109px;
 }
 button+p{
     position: relative;
-    bottom: -18px;
+    bottom: -19px;
 }
 
 .loginwith+p{
     position: relative;
-    bottom: 80px;
-    left:250px;
+    bottom: 60px;
+    left:230px;
 }
 /* i */
 i{
     position: relative;
     top: 10px;
-    left:345px;
+    left:-0px;
 }
+
+
+
+.number p{
+    position: relative;
+    bottom: 5px;
+}
+a{
+    text-decoration: none;
+  color: white;
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.heading h2{
+    margin-left: 30px;
+}
+
+.navbar-icons{
+    display: flex;
+    gap: 60px;
+    margin-right: 50px;
+    font-size: large;
+    margin-top: 10px;
+}
+.hovering{
+    display: none;
+}
+.profile-card{
+    display: none;
+    position: static;
+    z-index: 1000;
+    background-color: black;
+}
+.searchbar:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+.cart:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+.profile-icon:hover .profile-card{
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    height: 250px;  
+    border: 1px solid gray;   
+}
+.profile-card button{
+    background-color: gray;
+    color: white;
+    height: 40px;
+    width:180px ; 
+}
+.btn{
+  position: relative;
+  bottom: 40px;
+  right: 10px;
+}
+
+.profile-card{
+    padding-left: 20px;
+   padding-top: 10px;
+}
+
+.searchbar{
+    position: relative;
+}
+.cart{
+    position: relative;
+}
+.profile-icon{
+    position: relative;
+}
+
+
+

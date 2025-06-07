@@ -27,6 +27,9 @@ body{
 }
 .profile-card{
     display: none;
+    position: static;
+    z-index: 1000;
+    background-color: black;
 }
 .searchbar:hover .hovering{
     display: block;
@@ -323,6 +326,10 @@ del{
  background-color:rgb(14, 14, 14);
  
 }
+  a{
+  text-decoration: none;
+  color: white;
+}
 .pc1img img{
   width: 200px;
  height:200px;
@@ -476,10 +483,7 @@ del{
   position: relative;
   top: 10px;
 }
-.orgdown [p~="ADARSHA"]{
-  font-size: larger;
-  font-weight: bolder;
-}
+
 #sir{
   font-size: large;
   font-weight: medium;
