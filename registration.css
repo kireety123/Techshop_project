@@ -46,6 +46,10 @@ body{
     bottom: 30px;
     color: grey;
 }
+#subbtn{
+    background-color: red;
+    color: white;
+}
 
 /* button */
 .registrationcard>button{
