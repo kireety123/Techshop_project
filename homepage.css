@@ -667,7 +667,16 @@ body {
 .carousel-indicators .active {
   background-color: red;
 }
+#cross{
+  
+  font-size: x-large ;
+  font-weight: bolder;
 
+}
+#cross2{
+  font-size: x-large ;
+  font-weight: bolder;
+}
 
 .display1{
   display: flex;
@@ -990,4 +999,11 @@ del{
    position: relative;
    left: 760px;
    bottom: 30px;
+}
+
+#cross{
+    font-size: x-large;
+}
+#cross2{
+    font-size: x-large;
 }
