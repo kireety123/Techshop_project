@@ -1,0 +1,1526 @@
+/* Base Styles */
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  margin-bottom: 30px;
+}
+
+/* Responsive Media Queries */
+
+
+
+/* log in page starts here */
+
+
+.login {
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 30px 25px;
+  border-radius: 8px;
+  color: #fff;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 999;
+  left: 35%;
+  display: none;
+}
+
+.login p a{
+  position: static;
+  text-decoration: none;
+  color: #ff3c3c;
+}
+
+.login a{
+  position: absolute;
+  right: 0;
+  top: -10px;
+  text-decoration: none;
+  color: white;
+}
+
+.login h4 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ddd;
+}
+
+.login p {
+  font-size: 14px;
+  margin: 5px 0 15px;
+  color: #aaa;
+}
+
+.login input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+}
+
+.login button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.separate{
+  display: flex;
+  margin: 15px 0;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.separate span{
+    margin: 0 10px;
+}
+
+.separate::before,
+.separate::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.mediaboxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mediaboxes p {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 4px;
+  color: white;
+   cursor: pointer; 
+  font-size: 14px;
+}
+
+.fb {
+  background-color: #3b5998;
+}
+
+.goo {
+  background-color: #db4437;
+}
+
+.twit {
+  background-color: skyblue;
+} 
+
+
+/* login page ends here */
+
+/* signin page starts here  */
+
+
+.signin {
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 30px 25px;
+  border-radius: 8px;
+  color: #fff;
+  width: 370px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 999;
+  left: 35%;
+  display: none;
+}
+
+
+.signin p a{
+  position: static;
+  color: #ff3c3c;
+}
+
+.signin a{
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  top: -10px;
+  right: 0;
+}
+
+.signin input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+}
+
+.signin button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 50px;
+
+} 
+
+#login:target,
+#signup:target{
+  display: block;
+}
+.twi{
+  background-color: rgb(32, 192, 221);
+  color: white;
+}
+/* sign in  page ends here */
+
+/* media queries for navbar starts here */
+
+/* Medium Phones (376px–575px) */
+@media (max-width: 575px) {
+  nav {
+
+    align-items: flex-start;
+  }
+
+  .navbar {
+    gap: 15px;
+  }
+}
+
+/* Large Phones and Small Tablets (576px–767px) */
+@media (max-width: 767px) {
+  .navbar {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .profilecard {
+    width: 80vw;
+  }
+}
+
+/* Tablets (768px–991px) */
+@media (max-width: 991px) {
+  .navbar {
+    gap: 20px;
+  }
+
+  .logo h3 {
+    font-size: 22px;
+  }
+
+  .tool-tip {
+    display: none !important;
+  }
+}
+
+/* Laptops (992px–1199px) */
+@media (max-width: 1199px) {
+  nav {
+    padding: 10px 30px;
+  }
+
+  .profilecard {
+    width: 240px;
+  }
+}
+
+/* Desktops (≥ 1200px) */
+@media (min-width: 1200px) {
+  .navbar {
+    gap: 30px;
+  }
+
+  .logo h3 {
+    font-size: 26px;
+  }
+}
+
+/* Large Screens (4K and above) */
+@media (min-width: 1920px) {
+  .logo h3 {
+    font-size: 32px;
+  }
+
+  .navbar i {
+    font-size: 24px;
+  }
+
+  .profilecard {
+    font-size: 16px;
+  }
+}
+
+
+/* media queries for nav bar ends here */
+
+
+/* hero,carosel section starts here */
+
+.hero-section {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  min-height: 100vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.text-content::before{
+  content: "In Ear";
+  position: absolute;
+  color: rgb(60, 58, 58);
+  top: 40%;
+  left: 0;
+  font-weight: 900px;
+  z-index: 0;
+  font-size: 3000px;
+}
+
+
+.text-content {
+
+  flex: 1 1 45%;
+  padding: 1rem;
+  z-index: 2;
+}
+
+.text-content h4 {
+  font-size: 1.25rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.text-content p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.text-content pre {
+  font-size: 1.5rem;
+  color:white;
+  margin-bottom: 1rem;
+  font-family: inherit;
+}
+
+.text-content strike {
+  color: #888;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+}
+
+.shop-btn {
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #ff3c3c, #c62828);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.shop-btn:hover {
+  background: #ff5e57;
+  transform: translateY(-2px);
+}
+
+.image-content {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.image-content img {
+  width: 100%;
+   max-width: 550px;
+  /* animation: float 5s ease-in-out infinite; */ 
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.1));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Carousel Indicators */
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff3c3c;
+  opacity: 0.5;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+#firstcaurosel button{
+   margin-bottom: 1600px;
+
+}
+
+#all{
+    margin-left: 200px;
+}
+
+
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-icons {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-right: 20px;
+    font-size: medium;
+  }
+
+  .display1,
+  .Featured_products,
+  .prefooter,
+  .orgdown {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image1specifications {
+    padding: 0;
+    margin: 0;
+    position: static;
+    text-align: center;
+  }
+
+  .image1 img,
+  .image2 img,
+  .image3 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Featured_products,
+  .productcards {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pc1,
+  .pc12 {
+    width: 90%;
+  }
+
+  #fp,
+  #advantages,
+  .Featured_products+h2,
+  #top {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .lists {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .up1 input[type],
+  .up1 button {
+    width: 90%;
+  }
+
+  .orgdown {
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #sir {
+    right: 0;
+    text-align: center;
+    position: static;
+  }
+
+  .image1specifications {
+    top: 0;
+    right: 0;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .up2 {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Medium Phones */
+@media (min-width: 481px) and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-icons {
+    gap: 30px;
+  }
+
+  .display1,
+  .Featured_products,
+  .prefooter,
+  .orgdown {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image1 img,
+  .image2 img,
+  .image3 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Small Tablets / Laptops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .navbar-icons {
+    gap: 40px;
+  }
+
+  .display1,
+  .prefooter,
+  .orgdown {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .Featured_products,
+  .productcards {
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .image1 img,
+  .image2 img,
+  .image3 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Medium Laptops */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .navbar-icons {
+    gap: 50px;
+  }
+}
+
+/* Large Laptops */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .navbar-icons {
+    gap: 60px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1440px) {
+  .navbar-icons {
+    gap: 70px;
+  }
+}
+
+/* The rest of your styles remain the same below here */
+
+/* ... original CSS untouched below ... */
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.heading h2 {
+  margin-left: 30px;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 60px;
+  margin-right: 50px;
+  font-size: large;
+  margin-top: 10px;
+}
+.hovering {
+  display: none;
+}
+.profile-card {
+  display: none;
+  position: static;
+  z-index: 1000;
+  background-color: black;
+}
+.searchbar:hover .hovering {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  padding: 0px 10px;
+  border: 1px solid grey;
+}
+.cart:hover .hovering {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  padding: 0px 10px;
+  border: 1px solid grey;
+}
+.profile-icon:hover .profile-card {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  height: 250px;
+  border: 1px solid gray;
+}
+.profile-card button {
+  background-color: gray;
+  color: white;
+  height: 40px;
+  width: 180px;
+}
+.btn {
+  position: relative;
+  bottom: 40px;
+  right: 10px;
+}
+.profile-card {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.searchbar {
+  position: relative;
+}
+.cart {
+  position: relative;
+}
+.profile-icon {
+  position: relative;
+}
+/* Carousel */
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #b9a8a8;
+  margin: 0 6px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.carousel-indicators .active {
+  background-color: red;
+}
+#cross{
+  
+  font-size: x-large ;
+  font-weight: bolder;
+
+}
+#cross2{
+  font-size: x-large ;
+  font-weight: bolder;
+}
+
+.display1{
+  display: flex;
+  margin-top: 50px;
+  height: 750px;
+}
+.image1specifications{
+  padding-left: 300px;
+}
+.image1 img{
+  width: auto;
+  height:700px;
+  
+  position: relative;
+  right: 100px;
+}
+.image1{
+   margin-left: 200px;
+}
+.image1specifications{
+  margin-left: 100px;
+  position: relative;
+  top: 150px;
+  right: 100px;
+ 
+}
+ ins{
+  text-decoration: none;
+  font-size: larger;
+  margin-right: 0px;
+  position: relative;
+  top: 20px;
+  font-weight: bolder;
+  
+}
+del{
+  position: relative;
+  top: 20px;
+  right: 30px;
+}
+button{
+  position: relative;
+  top: 40px;
+  width: 130px;
+  height: 40px;
+  background-color: red;
+  color: white;
+}
+.image2{
+  position: relative;
+  bottom: 400px;
+  left: 600px;
+}
+.image2 img{
+  width: auto;
+  height:700px;
+  position: relative;
+  right: 100px;
+}
+.image3 img{
+   width: auto;
+  height:700px;
+  position: relative;
+  right: 100px;
+}
+.Featured_products{
+  display:flex;
+  margin-top: 140px;
+  gap: 120px;
+  justify-content: center;
+
+}
+.Featured_products img{
+  width: 200px;
+  height: 300px;
+  
+    
+}
+
+
+
+#fp{
+  margin-top: 240px;
+  padding-left: 730px ;
+}
+.Featured_products p{
+  position: relative;
+  left: 40px;
+}
+.fp ins{
+  font-size: larger;
+  font-weight: bolder;
+  position: relative;
+  left: 30px;
+}
+del{
+  position: relative;
+  
+  left: 30px;
+  padding-bottom: 30px;
+}
+.fp5 ins{
+  position: relative;
+  left: 50px;
+}
+.fp5 del{
+   position: relative;
+  left: 50px;
+}
+.Featured_products button{
+  position: relative;
+  top: 850px;
+}
+.Featured_products+h2{
+   margin-top: 240px;
+  padding-left: 760px ;
+}
+ .lists{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: larger;
+  font-weight:normal;
+  gap: 200px;
+}
+#all{
+  border: 1px solid red;
+  background-color: red;
+  color:white;
+  width: 70px;
+  height: 40px;
+  padding-left: 20px;
+  padding-top: 3px;
+  border-radius: 5px;
+}
+.pc1{
+  border: 1px solid #b9a8a8;
+  width: 300px;
+  height: 550px;
+}
+.pc1img{
+ width: 100%;
+ height:250px;
+ background-color:rgb(14, 14, 14);
+ 
+}
+  a{
+  text-decoration: none;
+  color: white;
+}
+.pc1img img{
+  width: 200px;
+ height:200px;
+ position: relative;
+ left: 35px;
+ top: 20px;
+ 
+}
+ .productcards i{
+  color: red;
+  
+}
+.pc1info{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.pc1info ins{
+  font-size:x-large;
+  font-weight: bolder;
+}
+.pc1info button{
+  width:250px;
+  border-radius: 5px;
+}
+.productcards{
+  margin-top: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 30px;
+}
+.Featured_products>.carousel-indicators>button{
+  position: relative;
+  top: 1050px;
+}
+.pc12{
+   border: 1px solid #b9a8a8;
+  width: 300px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pc12 p{
+  font-size: xx-large;
+  font-weight:lighter;
+}
+.pc12 i{
+  color: white;
+  position: relative;
+  top: 20px;
+  width: 60px;
+}
+#advantages{
+  margin-top: 240px;
+  padding-left: 730px ;
+}
+.prefooter{
+  display:flex;
+  gap:180px;
+  justify-content: center;
+
+}
+.prefoot{
+  display: flex;
+
+}
+.footer{
+  margin-top: 200px;
+}
+.prefooter i{
+  color: red;
+  
+  font-size:xx-large;
+  font-weight: bolder;
+  position: relative;
+  right: 30px;
+  top: 10px;
+}
+.orgup{
+  display:flex;
+
+}
+.up1{
+  margin-top: 100px;
+  padding-left: 50px;
+}
+.up1 h2{
+  position: relative;
+  bottom: 20px;
+}
+.up1 p ,input[type],button{
+  position: relative;
+  bottom: 10px;
+}
+.up1 input[type]{
+  background-color: rgb(14, 14, 14);
+  border: 1px solid grey;
+  width: 300px;
+  height: 50px;
+
+}
+.up1 input[type="email"]{
+  font-size: larger;
+}
+.up1 button{
+    position: relative;
+    right: 305px;
+    padding-bottom: 0px;
+    top: 50px;
+    font-size: larger;
+    height: 50px;
+}
+
+.lis li{
+ list-style: none;
+ padding-bottom: 10px;
+ font-size: medium;
+ font-weight: lighter;
+}
+.lists h4{
+  position: relative;
+  left:30px;
+  bottom: 20px;
+}
+.up2{
+  padding-left: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.orgfooter{
+  margin-top: 150px;
+  border: 1px solid rgb(14, 14, 14);
+  background-color: rgb(14, 14, 14);
+}
+.orgdown{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.iconlogos{
+  display: flex;
+  margin-right: 90px;
+  align-items: center;
+  gap: 40px;
+  font-size: x-large;
+}
+.orgdown p{
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+
+#sir{
+  font-size: large;
+  font-weight: medium;
+  position: relative;
+  right: 330px;
+}
+.tpr{
+  margin-top: 430px;
+}
+#top {
+   position: relative;
+   left: 760px;
+   bottom: 30px;
+}
+
+#cross{
+    font-size: x-large;
+}
+#cross2{
+    font-size: x-large;
+}
+
+
+
+
+/* product page css starts here */
+
+.cartsproduct i{
+    position: relative;
+    bottom:42px;
+}
+.numbercart p{
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+    
+}
+.fivstarproduct i{
+    position: relative;
+    top: 20px;
+    right: 40px;
+    color: red;
+}
+.fivstarproduct{
+    position: relative;
+    right: 380px;
+    bottom: 17px;
+}
+.insdel ins{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    
+}
+.insdel del{
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.tickbox {
+    position: relative;
+    bottom: 10px;
+    right: 80px;
+    z-index: 20;
+}
+.instockbutton{
+ 
+   position: relative;
+   bottom: 160px;
+   left: 290px;
+   
+}
+.instockbutton button{
+    background-color: green;
+}
+
+    
+
+.expdet{
+    display:flex;
+
+}
+.scimage{
+    width: 200px;
+    height: 200px;
+}
+.scimage img{
+    width:150px;
+    height:150px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.scimage2 img{
+    width:150px;
+    height:150px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.scimage2{
+     width: 400px;
+    height: 200px;
+    
+}
+.showcase{
+    margin-left: 20px;
+}
+.details{
+    margin-top: 30px;
+}
+.maincase img{
+    width: 800px;
+    height:800px;
+    position: relative;
+    right:150px;
+}
+.imgdet{
+    width: 450px;
+}
+.det1>h2+p{
+  font-size: larger;
+  font-weight: bold;
+}
+.ratings{
+    position: relative;
+    left: 120px;
+    bottom: 25px;
+}
+.det1>i{
+    color: red;
+}
+.det2 ins{
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    
+    
+}
+.insdel{
+    position: relative;
+    top: 40px;
+}
+
+.det2 del{
+    font-size: larger;
+    padding-left: 30px;
+}
+#greenline{
+    color: green;
+    padding-top: 50px;
+    font-size: larger;
+    font-weight: bold;
+}
+#taxline{
+     position: relative;
+     bottom: 30px;
+     color: gray;
+     font-size: large;
+}
+
+.cont{
+    position: relative;
+    top: 20px;
+}
+.det1{
+    position: relative;
+    top: 60px;
+}
+.det2{
+    height: 200px;
+   position: relative;
+   bottom: 35px;
+}
+.emi{
+    border: 1px solid grey;
+    font-size: small;
+    padding-left: 4px;
+    padding-top: 10px;
+    padding-right: 2px;
+
+}
+.cashback{
+    border: 1px solid grey;
+    font-size: medium;
+   
+    padding-left: 4px;
+    padding-top: 10px;
+    padding-right: 5px;
+
+}
+.emicash{
+    display: flex;
+    gap: 20px;
+    
+}
+.det3{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.det4 button{
+    margin-top: 0px;
+    color: white;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    
+    
+}
+#productdetcarousel{
+   top: 950px;
+}
+#rp{
+    margin-top: 250px;
+    position: relative;
+    left: 710px;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 200px;
+}
+.specifications h3{
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    width:150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border-radius: 5px;
+}
+.ulists{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    
+
+}
+.ulists1,.ulists2{
+    list-style: none;
+    font-size: large;
+    
+}
+.ulists2 li{
+    padding-bottom: 20px;
+    position: relative;
+    right:1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+.ulists1 li{
+    padding-bottom: 20px;
+}
+.pc1{
+  border: 1px solid #b9a8a8;
+  width: 300px;
+  height: 550px;
+}
+.pc1img{
+ width: 100%;
+ height:250px;
+ background-color:rgb(14, 14, 14);
+ 
+}
+.pc1img img{
+  width: 200px;
+ height:200px;
+ position: relative;
+ left: 35px;
+ top: 20px;
+ 
+}
+ .productcards i{
+  color: red;
+  
+}
+.pc1info{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.pc1info ins{
+  font-size:x-large;
+  font-weight: bolder;
+}
+.pc1info button{
+  width:250px;
+  border-radius: 5px;
+}
+.productcards{
+  margin-top: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 30px;
+}
+.productcards button{
+  position: relative;
+  top: 40px;
+  width: 130px;
+  height: 40px;
+  background-color: red;
+  color: white;
+}
+.productcards ins{
+  text-decoration: none;
+  font-size: larger;
+  margin-right: 20px;
+  position: relative;
+  top: 20px;
+  
+}
+.productcards del{
+  position: relative;
+  top: 20px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #b9a8a8;
+  margin: 0 6px;
+  border: none;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top: 1630px;
+  
+}
+.carousel-indicators .active {
+  background-color:red;
+}
+
+
+
+/* product page css ends here */
+
+
+/* cart page css starts here */
+
+.number{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 15px;
+    top: -10px;
+    
+}
+.number p{
+    position: relative;
+    bottom: 5px;
+}
+
+ .smimage{
+     width: 400px;
+    height: 200px;
+ }
+ .smimage img{
+     width:150px;
+    height:150px;
+    position: relative;
+    right: 50px;
+    top: 20px;
+ }
+.image1{
+    display: flex;
+}
+
+.cartbuttons{
+    display: flex;
+    width: fit-content;
+    border: 1px solid gray;
+    position: relative;
+    top: 0px;
+    margin-bottom: 10px;
+    
+}
+.btn1 button{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    width: 50px;
+    height: 40px;
+    font-size: large;
+    border: rgb(66, 65, 65) ;
+    position: relative;
+    top: 0px;
+}
+.btn2 button{
+background-color: black;
+color: red;
+width: 60px;
+height: 40px;
+border:  rgb(66, 65, 65);
+font-size: x-large;
+font-weight: bolder;
+position: relative;
+top: 0px;
+
+}
+
+.images{
+    width: 800px;
+    height: 600px;
+    border: 1px solid rgb(20, 20, 21);
+    background-color: rgb(20, 20, 20) ;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+    padding: 0px 20px;
+}
+.image1{
+    margin-top: 30px;
+
+}
+.details p{
+    font-size: larger;
+    display: flex;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    padding-right: 90px;
+    
+}
+.insdelcart{
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+}
+.details ins{
+    font-size: x-large;
+    text-decoration: none;
+    
+    position: relative;
+    right: 23px;
+    bottom: 30px;
+    margin-bottom: 0px;
+}
+.details del{
+    font-weight: lighter;
+    font-size: large;
+}
+.details i{
+    font-size: large;
+    position: relative;
+    left: 380px;
+    bottom: 80px;
+}
+
+.cartbody{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+
+}
+.ordersummary h2{
+    margin-bottom: 40px;
+
+}
+.ordersummary p{
+    font-size: large;
+    padding-bottom: 15px;
+}
+.ordersummary ins{
+    text-decoration: none;
+    font-size: larger;
+}
+.total h2{
+    margin-top: 20px;
+}
+.total ins{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 14px;
+
+}
+.discount ins{
+    color: green;
+    font-weight: bolder;
+}
+.delivery h5{
+    color: green;
+    font-weight: bolder;
+}
+.price{
+    display: flex;
+    justify-content:space-between;
+}
+.discount{
+    display: flex;
+    justify-content: space-between;
+}
+.delivery{
+    display: flex;
+    justify-content: space-between;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.total h2{
+    margin-top: 40px;
+}
+.orderbtn button{
+    background-color: red;
+    color: white;
+    width: 350px;
+    height: 50px;
+    font-size: larger;
+    margin-top: 10px;
+}
+#cartcartpage i{
+    position: relative;
+    bottom: 20px;
+
+}
+
+
+
+/* cart page css ends here */
